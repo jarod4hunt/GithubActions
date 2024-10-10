@@ -108,6 +108,8 @@ jobs:
       if: success()  # This ensures that the image is only pushed to Docker Hub if all previous steps have succeeded.
       run: docker push your-dockerhub-username/flask_project:latest  # Pushes the 'latest' tagged Docker image to Docker Hub.
 
+
+
 ```
 
 In a nutshell, when you do a push to this repository, it will run this workflow automatically!  There are many steps going on here, from building the code, to running the unit tests, to building the dockerfile to running the container.  Pretty much everything you would want!
